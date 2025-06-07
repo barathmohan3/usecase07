@@ -6,7 +6,7 @@ module "iam" {
 module "lambda" {
     source = "./modules/lambda"
     function_name = "helloworldtest"
-    image_uri  = "${{ steps.login-ecr.outputs.registry }}/${{ env.ECR_REPO }}:latest"
+    image_uri  = "650251701672.dkr.ecr.us-east-1.amazonaws.com/first:latest"
     role_arn = module.iam.role_arn
 }
 
