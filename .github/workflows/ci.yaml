@@ -4,8 +4,8 @@ on:
   workflow_dispatch:
 
 permissions:
-      id-token: read   # This is required for requesting the JWT
-      contents: read 
+      id-token: write   # This is required for requesting the JWT
+      contents: write 
  
 env:
   AWS_REGION: us-east-2
