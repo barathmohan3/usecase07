@@ -1,3 +1,7 @@
+provider "aws" {
+  region = "eu-west-1"
+}
+
 module "iam" {
     source = "./modules/iam"
     role_name = "lambda_exec_role"
