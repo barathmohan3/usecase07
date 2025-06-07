@@ -17,7 +17,7 @@ module "lambda" {
 module "apigateway" {
     source = "./modules/api_gateway"
     api_name = "hellowrold-test"
-    route_key = "GET /hello"
+    route_key = "GET /"
     lambda_invoke_arn = module.lambda.invoke_arn
     lambda_arn = module.lambda.arn
 
