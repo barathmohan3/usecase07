@@ -8,7 +8,7 @@ permissions:
       contents: write 
  
 env:
-  AWS_REGION: us-east-1
+  AWS_REGION: eu-west-1
   ROLE_TO_ASSUME: arn:aws:iam::650251701672:role/s3-github
   ECR_REPO: first
      
@@ -24,7 +24,7 @@ jobs:
       uses: aws-actions/configure-aws-credentials@v2
       with:
           role-to-assume: arn:aws:iam::650251701672:role/s3-github
-          aws-region: us-east-1
+          aws-region: eu-west-1
 
     - name: Login to Amazon ECR
       id: login-ecr
