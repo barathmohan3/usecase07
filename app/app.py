@@ -1,3 +1,3 @@
 import sys
 def handler(event, context):
-    return 'Hello this is lavanya' + sys.version + '!'
+    return 'Hello this is Barath!'
